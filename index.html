@@ -1,25 +1,27 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Penguin Fashion E-commerce Website</title>
-      <script src="https://cdn.tailwindcss.com"></script>
-      <script>
-        tailwind.config = {
-          theme: {
-            extend: {
-              colors: {
-                clifford: '#da373d',
-              }
-            }
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>My Penguin Fashion E-commerce Website</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            clifford: '#da373d',
           }
         }
-      </script>
+      }
+    }
+  </script>
 </head>
-<body>
-    <!-- Header section  -->
-    <!-- <section class="container mx-4">
+
+<body class="">
+  <!-- Header section  -->
+  <!-- <section class="container mx-4">
         <h1 class="text-5xl uppercase font-bold"> 
             <span class="text-yellow-400">be the Penguins</span>
              <br>
@@ -29,28 +31,296 @@
         <button class="uppercase bg-lime-400 py-2 px-2 font-semibold rounded-md">buy now</button>
     </section> -->
 
-    <section id="header" class="bg-amber-50 sm:flex items-center justify-around pt-16 pb-28">
-        <div class="title space-y-4">
-            <h1 class="uppercase text-2xl text-center sm:text-5xl  font-bold line-clamp-3">
-                <span class="text-yellow-500">be Penguins</span>
-                <br>
-                <span>of winter</span>
-            </h1>
-            <p class="my-4 sm:text-xl text-center">Lorem ipsum, dolor sit amet consectetur <br> adipisicing elit. Iusto, optio!</p>
-            <button class="uppercase bg-lime-500 py-3 px-4 text-sm sm:text-lg sm:font-semibold text-white rounded-lg">
-                <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5" stroke="currentColor" class="w-6 h-6 inline">
-                    <path stroke-linecap="round" stroke-linejoin="round" d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
-                  </svg>
-                  Buy now
-            </button>
+  <!-- Hero section  -->
+  <section>
+    <div class="containe bg-yellow-100 md:flex items-center justify-around md:py-20 py-12">
+      <div class="title md:basis-8/12  md:px-28">
+        <h1 class="uppercase font-bold md:text-6xl text-5xl text-center md:text-start">
+          <span class=" text-yellow-300 ">be Penguins</span><br>
+          <span class=" text-slate-600 ">of winter</span>
+        </h1>
+        <p class="text-slate-600 text-start md:py-4 md:px-2 py-4 px-12">Here you get all kind of winter cloths are
+          especially outerwear like coats, jackets, scarves and gloves or mittens, earmuffs, but also warm underwear
+          like long underwear, union suits and socks.</p>
+        <button
+          class="uppercase bg-green-700 px-5 py-3 font-semibold text-xl  block m-auto  text-white rounded-lg hover:bg-sky-700 hover:text-amber-300">
 
+          <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+            stroke="currentColor" class="w-6 h-6 inline">
+            <path stroke-linecap="round" stroke-linejoin="round"
+              d="M2.25 3h1.386c.51 0 .955.343 1.087.835l.383 1.437M7.5 14.25a3 3 0 00-3 3h15.75m-12.75-3h11.218c1.121-2.3 2.1-4.684 2.924-7.138a60.114 60.114 0 00-16.536-1.84M7.5 14.25L5.106 5.272M6 20.25a.75.75 0 11-1.5 0 .75.75 0 011.5 0zm12.75 0a.75.75 0 11-1.5 0 .75.75 0 011.5 0z" />
+          </svg>
+          shop now</button>
+      </div>
+      <div class="img md:pe-12 md:basis-5/12">
+        <img class="md:h-96" src="img/model.png" alt="">
+
+      </div>
+    </div>
+  </section>
+  <!-- woman cloths section  -->
+
+
+  <section class="bg-yellow-100 text-white pb-8 px-5">
+    <h2 class="md:text-5xl text-3xl text-slate-700 text-center font-semibold font-serif my-4">Woman cloths</h2>
+    <div class="container grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3  gap-4">
+      <div class="">
+        <div class="p-5 bg-slate-100 rounded-xl">
+          <img class="lg:w-70 rounded-lg p-4" src="img/jacket-1.png" alt="">
+        </div>
+        <h2 class="text-3xl font-bold text-slate-700 ">Yellow Coat Jacket</h2>
+        <p class="text-slate-700 font-medium py-2">Outerwear made to protect you against the elements while
+          living an active urban life.</p>
+        <div class="flex items-center justify-around">
+          <h3 class="text-slate-700 text-3xl font-extrabold "><span class="text-yellow-500 "></span> $220 </h3>
+          <button
+            class="uppercase bg-green-700 text-white font-semibold rounded-lg px-3 py-2 hover:bg-green-400 hover:text-slate-800 ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 inline">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+            </svg>
+            add to cart</button>
         </div>
 
-        <div class="main ">
-            <img src="img/model.png" alt="" class="w-1/2 sm:w-full">
+      </div>
+
+      <div class="">
+        <div class="p-5 bg-slate-100 rounded-xl">
+          <img class="lg:w-70 rounded-lg p-4" src="img/jacket-2.png" alt="">
+
         </div>
-    </section>
-    
-    
+        <h2 class="text-3xl font-bold text-slate-700">Yellow Coat Jacket</h2>
+        <p class="text-slate-700 font-medium   py-2">Outerwear made to protect you against the elements while
+          living an active urban life.</p>
+        <div class="flex items-center justify-around">
+          <h3 class="text-slate-700 text-3xl font-extrabold "><span class="text-yellow-500 "></span> $359 </h3>
+          <button
+            class="uppercase bg-green-700 text-white font-semibold rounded-lg px-3 py-2 hover:bg-green-400 hover:text-slate-800 ">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+              stroke="currentColor" class="w-6 h-6 inline">
+              <path stroke-linecap="round" stroke-linejoin="round"
+                d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+            </svg>
+            shop now
+          </button>
+        </div>
+      </div>
+
+      <div class="">
+        <div class="p-5 bg-slate-100 rounded-xl">
+          <img class="lg:w-70  rounded-lg p-4" src="img/jacket-3.png" alt="">
+        </div>
+        <h2 class="text-3xl font-bold text-slate-700">Yellow Coat Jacket</h2>
+        <p class="text-slate-700 font-medium py-2">Outerwear made to protect you against the elements while living an active urban life.
+          <div class="flex items-center justify-around">
+            <h3 class="text-slate-700 text-3xl font-extrabold "><span class="text-yellow-500 "></span> $359 </h3>
+            <button
+              class="uppercase bg-green-700 text-white font-semibold rounded-lg px-3 py-2 hover:bg-green-400 hover:text-slate-800 ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 inline">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+              </svg>
+              shop now</button>
+          </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- Man cloths Section -->
+  <section class="px-5 bg-yellow-100 pb-8">
+    <h2 class="md:text-5xl text-3xl text-slate-700 text-center font-semibold font-serif my-4">Man cloths</h2>
+    <div class="container grid md:grid-cols-2 lg:grid-cols-3 gap-4">
+      <div>
+        <div class="bg-slate-50 rounded-lg">
+          <img src="img/jacket-4.png" alt="">
+        </div>
+        <h3 class="text-2xl font-bold text-slate-700">
+          Down jacket with hood
+        </h3>
+        <div class="text-center">
+          <p class="text-slate-700 font-medium py-2 text-start">Black long sleave jacket it very comfortable in winter
+            morning and getting reasonable price with big discount</p>
+          <div class="flex items-center justify-around pt-2">
+            <h3 class="text-slate-700 text-3xl font-extrabold"> $352 </h3>
+            <button
+              class="uppercase bg-green-700 text-white font-semibold rounded-lg px-3 py-2 hover:bg-green-400 hover:text-slate-800 ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 inline">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+              </svg>
+              add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="bg-slate-50 rounded-lg">
+          <img src="img/jacket-5.png" alt="">
+        </div>
+        <h3 class="text-2xl font-bold text-slate-700">
+          Down jacket with hood
+        </h3>
+        <div class="text-center">
+          <p class="text-slate-700 font-medium py-2 text-start">Black long sleave jacket it very comfortable in winter
+            morning and getting reasonable price with big discount</p>
+          <div class="flex items-center justify-around pt-2">
+            <h3 class="text-slate-700 text-3xl font-extrabold"> $352 </h3>
+            <button
+              class="uppercase bg-green-700 text-white font-semibold rounded-lg px-3 py-2 hover:bg-green-400 hover:text-slate-800 ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 inline">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+              </svg>
+              add to cart</button>
+          </div>
+        </div>
+      </div>
+
+      <div>
+        <div class="bg-slate-50 rounded-lg">
+          <img src="img/jacket-6.png" alt="">
+        </div>
+        <h3 class="text-2xl font-bold text-slate-700">
+          Down jacket with hood
+        </h3>
+        <div class="text-center">
+          <p class="text-slate-700 font-medium py-2 text-start">Black long sleave jacket it very comfortable in
+            winter morning and getting reasonable price with big discount</p>
+          <div class="flex items-center justify-around pt-2">
+            <h3 class="text-slate-700 text-3xl font-extrabold"> $352 </h3>
+            <button
+              class="uppercase bg-green-700 text-white font-semibold rounded-lg px-3 py-2 hover:bg-green-400 hover:text-slate-800 ">
+              <svg xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke-width="1.5"
+                stroke="currentColor" class="w-6 h-6 inline">
+                <path stroke-linecap="round" stroke-linejoin="round"
+                  d="M15.75 10.5V6a3.75 3.75 0 10-7.5 0v4.5m11.356-1.993l1.263 12c.07.665-.45 1.243-1.119 1.243H4.25a1.125 1.125 0 01-1.12-1.243l1.264-12A1.125 1.125 0 015.513 7.5h12.974c.576 0 1.059.435 1.119 1.007zM8.625 10.5a.375.375 0 11-.75 0 .375.375 0 01.75 0zm7.5 0a.375.375 0 11-.75 0 .375.375 0 01.75 0z" />
+              </svg>
+              add to cart</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    </div>
+    </div>
+
+  </section>
+
+
+
+
+  <!-- Our benefits -->
+
+  <!-- <section class="pt-4 bg-slate-100">
+    <h2 class="md:text-5xl text-3xl text-slate-700 text-center font-semibold font-serif my-4">Our Benefits</h2>
+    <div class="grid grid-cols-2 gap-7">
+      <div class=" col-span-2 ">
+        <img class="h-52 w-52" src="img/shopping.png" alt="">
+      </div>
+      <div class="flex items-center justify-around bg-white  p-6 rounded-lg">
+        <div>
+          <img class="h-20 w-20" src="icons/house.png" alt="">
+        </div>
+        <div>
+          <h2 class="text-md font-semibold">
+            Find the Perfect Fit
+          </h2>
+          <p class="text-md ">
+            Everybody is different, which is why we offer styls for everybody
+          </p>
+        </div>
+      </div>
+      
+
+      <div class="flex items-center justify-around bg-white  p-6 rounded-lg ">
+        <div>
+          <img class="h-20 w-20" src="icons/house.png" alt="">
+        </div>
+        <div>
+          <h2 class="text-md font-semibold">
+            Find the Perfect Fit
+          </h2>
+          <p class="text-md ">
+            Everybody is different, which is why we offer styls for everybody
+          </p>
+        </div>
+        </div>
+
+        <div class="flex items-center justify-around bg-white  p-6 rounded-lg">
+          <div>
+            <img class="h-20 w-20" src="icons/house.png" alt="">
+          </div>
+          <div>
+            <h2 class="text-md font-semibold">
+              Find the Perfect Fit
+            </h2>
+            <p class="text-md ">
+              Everybody is different, which is why we offer styls for everybody
+            </p>
+          </div>
+    </div>
+  </section> -->
+
+
+<!-- Our Benefits -->
+
+<section class="px-5 py-12">
+  <h2 class="md:text-5xl text-3xl text-slate-700 text-center font-semibold font-serif my-4">Our Benefits</h2>
+  <div class="lg:flex md:flex">
+    <div class="lg:basis-6/12 basis-full">
+      <img class="lg:h-full h-96" src="img/shopping.png" alt="">
+    </div>
+    <div class="lg:basis-6/12 basis-full">
+      <div class="flex items-center justify-around bg-white  p-6 rounded-lg">
+        <div>
+          <img class="w-20 h-20" src="icons/house.png" alt="">
+        </div>
+        <div class="ms-5">
+          <h2 class="text-md font-semibold">
+            Find the Perfect Fit
+          </h2>
+          <p class="text-md ">
+            Everybody is different, which is why we offer styls for everybody
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-around bg-white  p-6 rounded-lg">
+        <div>
+          <img class="w-20 h-20" src="icons/question.png" alt="">
+        </div>
+        <div class="ms-5">
+          <h2 class="text-md font-semibold">
+            You can asked anything
+          </h2>
+          <p class="text-md ">
+            Everybody is different, which is why we offer styls for everybody
+          </p>
+        </div>
+      </div>
+
+      <div class="flex items-center justify-around bg-white  p-6 rounded-lg">
+        <div>
+          <img class="w-20 h-20" src="icons/question.png" alt="">
+        </div>
+        <div class="ms-5">
+          <h2 class="text-md font-semibold">
+            You can asked anything
+          </h2>
+          <p class="text-md ">
+            Everybody is different, which is why we offer styls for everybody
+          </p>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
 </body>
+
 </html>
